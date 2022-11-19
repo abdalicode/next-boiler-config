@@ -1,2 +1,8 @@
 node_modules
+
+yarn-error.log
+.eslintcache
 .next
+next-env.d.ts
+
+.vscode
