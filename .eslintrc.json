@@ -16,7 +16,6 @@
 		"plugin:jsx-a11y/recommended",
 		"plugin:storybook/recommended",
 		"plugin:cypress/recommended",
-		"plugin:jest/recommended",
 		"prettier"
 	],
 	"overrides": [],
@@ -25,7 +24,7 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["react", "@typescript-eslint", "jest", "cypress", "import"],
+	"plugins": ["react", "@typescript-eslint", "cypress", "import"],
 	"settings": {
 		"react": {
 			"version": "detect"
@@ -41,13 +40,11 @@
 		"react/react-in-jsx-scope": "off",
 		"react/prop-types": "off",
 		"@typescript-eslint/no-var-requires": "off",
+		"@typescript-eslint/no-empty-function": "warn",
 		// changes the file to LF
 		"linebreak-style": ["error", "unix"],
-		// jest and cypress
-		"jest/valid-expect": "off",
+		// cypress
 		"cypress/no-unnecessary-waiting": "off",
-		"@typescript-eslint/no-empty-function": "warn",
-		"jest/valid-expect-in-promise": "warn",
 		// Import statement rules (eslint-plugin-import)
 		"import/named": "warn",
 		"import/no-cycle": "error",
